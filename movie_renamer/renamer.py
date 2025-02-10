@@ -2,7 +2,7 @@ import os
 import re
 
 # Get the location of the targets
-path = "/media/panagiotis/HDD/BU/Videos/Ταινιες"
+path = "/.../.../.../.../.../..."
 
 # Get a list of the folders
 folders = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
