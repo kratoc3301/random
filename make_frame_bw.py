@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 
 # Load the original image
-image_path = "/home/panagiotis/Downloads/the.png"
+image_path = "/.../.../.../..."
 image = Image.open(image_path).convert("RGBA")
 
 # Convert image to numpy array
@@ -19,5 +19,5 @@ hollow_image = Image.fromarray(data)
 
 # Save the processed image
 new_name = image_path.split("/")[-1]
-new_image_path = f"/home/panagiotis/Downloads/frame_{new_name}"
+new_image_path = f"/.../.../.../...{new_name}"
 hollow_image.save(new_image_path)
