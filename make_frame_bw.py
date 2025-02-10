@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-# Load the original image
+# Load the image
 image_path = "/.../.../.../..."
 image = Image.open(image_path).convert("RGBA")
 

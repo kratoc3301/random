@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-# Choose a new color
+# Choose a new color RGBA
 new_color = (205, 132, 232, 255)
 
 # Load the image
