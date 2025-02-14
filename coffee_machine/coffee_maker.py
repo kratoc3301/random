@@ -7,13 +7,13 @@ class CoffeeMaker:
             "coffee": 100,
         }
 
-    def report(self):
+    def report(self) -> None:
         """Prints a report of all resources."""
         print(f"Water: {self.resources['water']}ml")
         print(f"Milk: {self.resources['milk']}ml")
         print(f"Coffee: {self.resources['coffee']}g")
 
-    def is_resource_sufficient(self, drink):
+    def is_resource_sufficient(self, drink) -> bool:
         """Returns True when order can be made, False if ingredients are insufficient."""
         can_make = True
         for item in drink.ingredients:
@@ -22,7 +22,7 @@ class CoffeeMaker:
                 can_make = False
         return can_make
 
-    def make_coffee(self, order):
+    def make_coffee(self, order) -> None:
         """Deducts the required ingredients from the resources."""
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
