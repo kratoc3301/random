@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-# Choose a new color RGBA
+# Color RGBA
 new_color = (205, 132, 232, 255)
 
 # Load the image
@@ -13,7 +13,7 @@ data = np.array(image)
 
 # Replace pixels with the new color but only for non-transparent pixels
 non_transparent = data[:, :, 3] > 0  # Check if pixel is not transparent
-data[non_transparent] = new_color  # Apply the new color
+data[non_transparent] = new_color
 
 # Convert back to image
 colored_image = Image.fromarray(data)

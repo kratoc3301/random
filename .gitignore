@@ -1,0 +1,8 @@
+.git/
+.venv/
+*.pyc
+__pycache__/
+.idea/
+exe.txt
+os_docs.txt
+steps.txt

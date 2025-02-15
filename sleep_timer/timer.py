@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
 I am bored to get up and close my pc
+pyinstaller --onefile --icon=your_icon.ico your_script.py
+
 """
 import subprocess
 import customtkinter as ctk

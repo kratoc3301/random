@@ -9,7 +9,7 @@ import json
 
 class Labels(ctk.CTkFrame):
     """
-    Labels class
+    Create a frame with Labels Entries and Buttons with their functions
     """
 
     def __init__(self, master):
@@ -43,24 +43,21 @@ class Labels(ctk.CTkFrame):
                                  ipady=5, ipadx=5)
 
         # -------------------- ENTRIES --------------------
-        # Search entry
-        self.website_entry = tkinter.StringVar()
-        self.website_entry = ctk.CTkEntry(self, fg_color="transparent",
-                                          textvariable=self.website_entry, justify="center", width=200)
+        # ---------- Search entry ---------- |
+        # self.website_entry = tkinter.StringVar()
+        self.website_entry = ctk.CTkEntry(self, fg_color="transparent", justify="center", width=200)  # textvariable=self.website_entry
         self.website_entry.grid(row=1, column=1, padx=10, pady=10, sticky="w")
         self.website_entry.focus()
 
-        # Generate Password entry
-        self.email_entry = tkinter.StringVar()
-        self.email_entry = ctk.CTkEntry(self, fg_color="transparent",
-                                        textvariable=self.email_entry, justify="center", width=200)
+        # ---------- Generate Password entry ---------- |
+        # self.email_entry = tkinter.StringVar()
+        self.email_entry = ctk.CTkEntry(self, fg_color="transparent", justify="center", width=200)  # textvariable=self.website_entry
         self.email_entry.grid(row=2, column=1, padx=10, pady=10, sticky="w")
         self.email_entry.insert(0, "karlis.panagiotis@gmail.com")
 
-        # Add entry
-        self.password_entry = tkinter.StringVar()
-        self.password_entry = ctk.CTkEntry(self, fg_color="transparent",
-                                           textvariable=self.password_entry, justify="center", width=200)
+        # ---------- Add entry ---------- |
+        # self.password_entry = tkinter.StringVar()
+        self.password_entry = ctk.CTkEntry(self, fg_color="transparent", justify="center", width=200)  # textvariable=self.website_entry
         self.password_entry.grid(row=3, column=1, padx=10, pady=10, sticky="w")
 
         # -------------------- BUTTONS --------------------
